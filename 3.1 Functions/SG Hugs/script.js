@@ -1,6 +1,7 @@
-var main = function (input) {
+var main = function (numberOfSecondsPerHug) {
   let singaporePopulation = 5977339;
-  let numberOfSecondsPerHugPerSingapore = input * singaporePopulation;
+  let numberOfSecondsToHugSingapore =
+    numberOfSecondsPerHug * singaporePopulation;
   let numberofSecondsInAYear = 365 * 24 * 60 * 60;
   let totalRestSecondsInAYear = 365 * 9 * 60 * 60;
   let numberofYears =
