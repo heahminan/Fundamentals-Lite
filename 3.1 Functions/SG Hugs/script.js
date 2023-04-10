@@ -1,7 +1,11 @@
 var main = function (input) {
-  let numberOfGuests = input;
-  let numberOfOrangesNeeded = input * 4;
-  let litresOfOrangeJuice = input * 90 * 0.001;
-  let myOutputValue = `How many oranges are needed? Ans: ${numberOfOrangesNeeded} oranges How many litres of orange juice would I get? Ans : ${litresOfOrangeJuice} litres`;
+  let singaporePopulation = 5977339;
+  let numberOfSecondsPerHugPerSingapore = input * singaporePopulation;
+  let numberofSecondsInAYear = 365 * 24 * 60 * 60;
+  let totalRestSecondsInAYear = 365 * 9 * 60 * 60;
+  let numberofYears =
+    numberOfSecondsPerHugPerSingapore /
+    (numberofSecondsInAYear - totalRestSecondsInAYear);
+  let myOutputValue = numberofYears;
   return myOutputValue;
 };
